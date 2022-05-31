@@ -53,10 +53,6 @@ cp bdk-ffi/target/aarch64-apple-ios/release/libbdkffi.a bdkFFI.xcframework/ios-a
 cp bdk-ffi/target/lipo-ios-sim/release/libbdkffi.a bdkFFI.xcframework/ios-arm64_x86_64-simulator/bdkFFI.framework/bdkFFI
 cp bdk-ffi/target/lipo-macos/release/libbdkffi.a bdkFFI.xcframework/macos-arm64_x86_64/bdkFFI.framework/bdkFFI
 
-# remove unneed .h and .modulemap files
-rm Sources/BitcoinDevKit/bdkFFI.h
-rm Sources/BitcoinDevkit/bdkFFI.modulemap
-
 # TODO add license info
 
 if test -f "bdkFFI.xcframework.zip"; then
